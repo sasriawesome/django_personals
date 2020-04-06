@@ -1,5 +1,5 @@
 # Django Personals
-Django Personals track autonumber style inner_id for model record
+Django Personals is Abstract Model collection, provide most frequently used personal/profile information.  
 This repository contains a [Personal](https://github.com/sasriawesome/django_personals) abstract models.
 
 ## Installation
