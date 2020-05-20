@@ -38,7 +38,7 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules :: Django Apps",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     tes_suite="tests.run_tests.run_tests"
 )

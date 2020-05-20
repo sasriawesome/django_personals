@@ -1,7 +1,6 @@
-from django.apps import AppConfig
+from django.apps import AppConfig as AppConfigBase
 
-
-class DjangoPersonalsConfig(AppConfig):
+class AppConfig(AppConfigBase):
     name = 'django_personals'
     label = 'django_personals'
-    verbose_name = 'Personals'
+    verbose_name = 'Django Personals'

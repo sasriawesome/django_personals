@@ -1,8 +1,10 @@
 from django.db import models
 from django.contrib import admin
+from django.db import models
+from django.utils import translation
 
-from django_personals.models import Person
-from django_personals.abstracts import (
+from django_personals.models import (
+    PersonAbstract,
     ContactAbstract,
     AddressAbstract,
     SocialAbstract,
@@ -16,8 +18,13 @@ from django_personals.abstracts import (
     FamilyAbstract
 )
 
+_ = translation.gettext_lazy
 
-# Create your models here.
+
+class Person(PersonAbstract):
+    class Meta:
+        verbose_name = _('Person')
+        verbose_name_plural = _('Persons')
 
 
 class PersonContact(ContactAbstract):
